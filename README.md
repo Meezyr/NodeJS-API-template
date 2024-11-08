@@ -38,6 +38,7 @@ This repository provides a template for creating a Node.js API using Express. It
 ### Configuration
 
 1. Duplicate `.env` and create a `.env.local` file in the root directory and add your custom environment variables.
+2. Create `src/assets` and `src/assets/logs` directories.
 
 ### Running the Application
 
