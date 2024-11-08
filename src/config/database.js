@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const UserModel = require('../models/userModel');
+const UserModels = require('../models/userModels');
 
 const database = new Sequelize(process.env.DB_BASE, process.env.DB_USER, process.env.DB_PASS, {
     host: process.env.DB_HOST,
@@ -11,7 +11,7 @@ const database = new Sequelize(process.env.DB_BASE, process.env.DB_USER, process
     logging: false
 })
 
-const User = UserModel(database, DataTypes)
+const User = UserModels(database, DataTypes)
 
 const initDb = () => {
     // return database.sync({force: true})
