@@ -1,0 +1,7 @@
+/node_modules/
+/.idea/
+/.env.local
+/src/assets/logs/*.log
+/.run/
+/src/assets/certificate/*
+/keys/
